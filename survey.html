@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Wines and Spirits Consumption</h1>
+    <p id="description">
+      The rate of alcohol consumption based on the sales of wines and spirits
+      during the holy month of ramadhan and lent season
+    </p>
+    <form
+      method="POST"
+      action="https://formspree.io/f/mldjwlre">
+     <label for="name" id="name-label">Name</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="enter your name"
+        required
+      /><br />
+      <label for="email" id="email-label">Email</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+      /><br />
+      <label for="number" id="number-label">Number</label><br />
+      <input type="number" id="number" min="1" max="100"/><br />
+      <fieldset>
+        <legend>Highly sold wine/whiskey</legend>
+        <select id="dropdown">
+          <option value="wine">Wine</option>
+          <option value="whiskey">Whiskey</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>most loved wines</legend>
+        <input type="radio" name="wine" value="wine" id="dry-wine" />
+        <label for="dry-wine">Dry Wine</label><br />
+        <input type="radio" name="wine" id="sweet-wine" value="wine" />
+        <label for="sweet-wine">Sweet Wine</label><br />
+      </fieldset>
+      <fieldset>
+        <legend>people's choice</legend>
+        <input type="radio" name="whiskey" value="whiskey" id="whiskey" />
+        <label for="whiskey">Whiskey</label><br />
+        <input type="radio" id="vodka" name="whiskey" value="whiskey" />
+        <label for="vodka">Vodka</label>
+      </fieldset>
+      <fieldset>
+        <legend>please tick the popular drinks</legend>
+        <input
+          type="checkbox"
+          id="fourcousins"
+          name="four-cousins"
+          value="fourcousins"
+        />
+        <label for="four-cousins"> Four-cousins</label><br />
+        <input
+          type="checkbox"
+          id="champagne"
+          name="champagne"
+          value="champagne"
+        />
+        <label for="champagne">Champagne</label><br />
+        <input
+          type="checkbox"
+          id="nederburg"
+          name="nederburg"
+          value="nederburg"
+        />
+        <label for="nederburg">Nederburg</label><br />
+        <input
+          type="checkbox"
+          id="singleton"
+          name="singleton"
+          value="singleton"
+        />
+        <label for="singleton">Singleton</label><br />
+        <input type="checkbox" id="jameson" name="jameson" value="jameson" />
+        <label for="jameson">Jameson</label><br />
+        <input
+          type="checkbox"
+          id="black-label"
+          name="black-label"
+          value="black-label"
+        />
+        <label for="black-label">Black-Label</label>
+      </fieldset>
+      <fieldset>
+        <fieldset>
+            <legend>what shops offer good prices and good customer care in kikuubo</legend>
+            <input
+              type="checkbox"
+              id="muyindi shop(arcky impex)"
+              name="muyindi shop(arcky impex)"
+              value="muyindi shop(arcky impex)"
+            />
+            <label for="muyindi shop(arcky impex)"> Muyindi shop(arcky impex)</label><br />
+            <input
+              type="checkbox"
+              id="capital quest"
+              name="capital quest"
+              value="capital quest"
+            />
+            <label for="capital quest">Capital Quest</label><br />
+            <input
+              type="checkbox"
+              id="mercy wines"
+              name="mercy wines"
+              value="mercy wines"
+            />
+            <label for="mercy wines">Mercy wines</label><br />
+            <input
+              type="checkbox"
+              id="muyindi(AIMS)"
+              name="muyindi(AIMS)"
+              value="muyindi(AIMS)"
+            />
+            <label for="muyindi(AIMS)">muyindi(AIMS)</label><br />
+            <input type="checkbox" id="premium liquor" name="premium liquor" value="premium liquor" />
+            <label for="premium liquor">Premium liquor</label><br />
+            <input
+              type="checkbox"
+              id="black-horse"
+              name="black-horse"
+              value="black-horse"
+            />
+            <label for="black-horse">black-horse</label>
+          </fieldset>
+          <fieldset>
+            <legend>Rate the sellers(How was the price and customer care)</legend>
+            <label for="muyindi(arcky)">Muyindi(Arcky Impex)</label>
+
+            <select name="muyindi(arcky)" id="muyindi(arcky)">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select><br>
+            <label for="capital quest">Capital Quest</label>
+
+            <select name="capital quest" id="capital quest">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select><br>
+            <label for="mercy wines">Mercy Wines</label>
+
+            <select name="mercy wines" id="mercy wines">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select><br>
+            <label for="muyindi(AIMS)">Muyindi(AIMS)</label>
+
+            <select name="muyindi(AIMS)" id="Muyindi(AIMS)">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select><br>
+            <label for="Premium liquor">Premium Liquor</label>
+
+            <select name="premium liquor" id="premium liquor">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select><br>
+            <label for="black-horse">Black Horse</label>
+
+            <select name="black-horse" id="black-horse">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select><br>
+            <label for="shop no.6">Shop no.6</label>
+
+            <select name="shop no.6" id="shop no.6">
+              <option value="poor">Poor</option>
+              <option value="satisfactory">Satisfactory</option>
+              <option value="good">Good</option>
+              <option value="very-good">Very Good</option>
+              <option selected value="excellent">Excellent</option>
+            </select>
+        </fieldset>
+          
+          <fieldset>
+        <legend>additional comments</legend>
+        <textarea type="text" rows="4" cols="20"> </textarea>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
